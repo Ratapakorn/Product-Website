@@ -11,5 +11,5 @@ The Rest will be in HTML Format
 - login.html: A Page Accessible within index.html, containing a total of 2 text fields, one for the Username and one for Password. Pretty Self-explanatory. A Link to the Registration can also be reached for first-time users without their account.
 - logout.html: A Simple Page which will be shown after the User selects "LOG OUT" in any page of the website. The next time the User access this website, they must relogin once again through the Home Page.
 - registration.html: As mentioned above, the registration page is accessed in the login.html for first-time Users of the webshop. The main difference between the Login Page is that we also ask for further User Information such as their Name, Age, Address, Overall Interests, etc.
-- customer.html: 
-- about.html
+- customer.html: A Page which a User can manually and permanently modify their Username and Password
+- about.html: An About Page has the information of the Companies and their 

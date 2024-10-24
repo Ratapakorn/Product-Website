@@ -13,5 +13,3 @@ The Rest will be in HTML Format
 - registration.html: As mentioned above, the registration page is accessed in the login.html for first-time Users of the webshop. The main difference between the Login Page is that we also ask for further User Information such as their Name, Age, Address, Overall Interests, etc.
 - customer.html: A Page which a User can manually and permanently modify their Username and Password
 - about.html: An About Page has the information of the Companies and their
-
-hello

@@ -32,17 +32,64 @@
     </div>
 
     <h2>Register</h2>
-    <form >
-        <label>
-            Username
-        </label>
-        <input type="text" required/>
-        <br/>
-        <label>
-            Password
-        </label>
-        <input type="password" required/>
-        
+    <form>
+        <fieldset>
+            <legend>User Information</legend>
+            <label>
+                Username
+            </label>
+            <input type="text" required/>
+            <br/>
+            <label>
+                Password
+            </label>
+            <input type="password"  required/><br>
+            <label>
+                Date of Birth:
+            </label>
+            <input type="date" required/><br><br>
+        </fieldset><br>
+
+
+        <fieldset>
+            <legend>
+                How did you hear about this webshop?
+            </legend>
+            <input type="checkbox" required/>
+            <label>Internet</label><br>
+            <input type="checkbox"  required/>
+            <label>Colleagues</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>
+                What is your Gender?
+            </legend>
+            <input name="gender" type="radio" required/>
+            <label>Male</label><br>
+            <input name="gender" type="radio" required/>
+            <label>Female</label><br>
+            <input name="gender" type="radio" required />
+            <label>Transgender</label><br>
+            <input name="gender" type="radio" required />
+            <label>Gender Neutral</label><br>
+            <input name="gender" type="radio"  required/>
+            <label>Binary</label><br>
+            <input name="gender" type="radio"  required/>
+            <label>NonBinary</label><br>
+            <input name="gender" type="radio"  required/>
+            <label>Anderes: </label>
+            <input name="gender" type="text" disabled required/>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Which type of products are you interested in?</legend>
+        <select>
+            <option>Toys</option>
+            <option>Decorations</option>
+        </select>
+        </fieldset>
+        <br>
         <button type="submit">register</button>
             </form> 
             <a href="login.html">

@@ -1,0 +1,67 @@
+body {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    /* text-align: center; */
+    margin-left: 15%;  /* Matches navbar width to avoid overlap */
+}
+
+.colored-section{
+    background-color: #ff4c68;
+} /*Here we aren't using the whitw section because there is only one white section*/
+
+.about{
+    text-align: center;
+}
+.aboutText{
+    margin: 4% ;
+}
+/* features section  */
+#features {
+    padding: 7% 15%;
+    padding-top: 0%;
+    background-color: #fff;
+    /* position: relative;
+    z-index: 0; */
+    /* NOTE z index doesn't apply unless you have your position as relative , absolute or fixed ..  */
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+/* coloring the font awesome styles used  */
+.fa-solid {
+    color: #f44862;
+    margin-bottom: 8%;
+}
+
+.team{
+    margin-top: -3%;
+}
+.team .teamImg{
+    width: 50px;
+}
+/* changing the hovered state */
+.fa-solid:hover {
+    color: #ff0026;
+}
+
+.icons{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    height: 20px;
+}
+.icons .fa-brands:hover{
+    color: #ff0026;
+
+}
+.cls{
+    color:black;
+    padding: 0 10px ;
+}
+
+footer{
+    height: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}

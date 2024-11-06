@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="images/AbhiGmbh_Logo.png">
+    <link rel="stylesheet" href="navstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
          <img src="images/AbhiGmbh_Logo.png" alt="Abhi_GMbH"/>
-    </header>
-<hr>
+    </header> -->
+<!-- <hr> -->
 <!--    Navigation bar-->
-    <div class="topnav">
+    <!-- <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <div class="dropdown">
             <button class="dropdown">Products
@@ -29,29 +32,55 @@
         <a href="about.html">About</a>
         <a href="registration.html">Registration</a>
         <a href="login.html">Log in</a>
+    </div> -->
+    <div class="container">
+        <nav class="vertnavbar">
+            <ul>
+                <li class="logo"><img src="images/AbhiGmbh_Logo.png" alt="Abhi_GMbH"/></li>
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <div class="dropdownfunctionality">
+                    <li><a class="dropdownbutton" href="wooden_crafted_toys/product_landing_page.html"><i class="fa fa-archive"></i>Products</a></li>
+                    <div class="dropdowncontent">
+                        <a href="wooden_crafted_toys/product_landing_page.html">Toys</a>
+                        <a href="wooden_crafted_decorations/product_landing_page.html">Decorations</a>
+                    </div>
+                </div>
+                <li><a href="customer.html"><i class="fa fa-user"></i>User Information</a></li>
+                <li><a href="about.html"><i class="fa fa-building"></i>About</a></li>
+                <li><a href=""><i class="fa fa-phone"></i>Contact</a></li> <!-- we don't have a contact page yet -->
+                <li class="loginregis"><a href="#contact">Login / Registration</a></li>
+            </ul>
+        </nav>
+    
+        <div class="content">
+            
+        <h2>Abhi GmbH</h2>
+        <h2>Your right choice!!</h2>
+        <p>Welcome to Abhi GmbH, your destination for unique, 
+            hand-crafted items made with care and creativity. 
+            Our collection offers one-of-a-kind pieces, perfect 
+            for adding a personal touch to your home or giving 
+            as thoughtful gifts. Each item is crafted by skilled 
+            artisans, ensuring high quality and attention to detail. 
+            At Abhi GmbH, we take pride in offering products that 
+            are both beautiful and original, making sure you find 
+            something truly special. Shop with us today and 
+            experience the charm of hand-made craftsmanship, backed 
+            by fast shipping and excellent customer service.
+            <h3>Login to explore more!!</h3>
+            <a href="login.html">
+                <button>Login</button>
+            </a>
+        </p>
+        
+        <hr>
+        <footer>
+            Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
+       </footer>
+        </div>
+        
     </div>
 
-    <h2>Abhi GmbH</h2>
-    <h2>Your right choice!!</h2>
-    <p>Welcome to Abhi GmbH, your destination for unique, 
-        hand-crafted items made with care and creativity. 
-        Our collection offers one-of-a-kind pieces, perfect 
-        for adding a personal touch to your home or giving 
-        as thoughtful gifts. Each item is crafted by skilled 
-        artisans, ensuring high quality and attention to detail. 
-        At Abhi GmbH, we take pride in offering products that 
-        are both beautiful and original, making sure you find 
-        something truly special. Shop with us today and 
-        experience the charm of hand-made craftsmanship, backed 
-        by fast shipping and excellent customer service.
-        <h3>Login to explore more!!</h3>
-        <a href="login.html">
-            <button>Login</button>
-        </a>
-    </p>
-    <hr>
-    <footer>
-         Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
-    </footer>
+    
 </body>
 </html>

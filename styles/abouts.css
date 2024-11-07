@@ -3,6 +3,7 @@ body {
     /* text-align: center; */
     margin-left: 15%;  /* Matches navbar width to avoid overlap */
     width: 82%;
+    background-color: #f3f4f6;
 }
 .horizontal{
     background-color: #333;
@@ -18,13 +19,6 @@ body {
     display: inline;
     float: inline-end;
   }
-.fa-user{
-    color: #333;
-}
-.fa-user:hover{
-    color: blue;
-}
-
 
 .about{
     margin-top: 5%;
@@ -37,7 +31,6 @@ body {
 #features {
     padding: 7% 15%;
     padding-top: 0%;
-    background-color: #fff;
 }
 
 .feature-box {
@@ -49,7 +42,14 @@ body {
     color: #f44862;
     margin-bottom: 8%;
 }
-
+.profilePage{
+    text-decoration: none;
+    color: #333;
+}
+.profilePage:hover{
+color: #f3f4f6;
+background-color: #646363;
+}
 .team{
     margin-top: -3%;
 }
@@ -59,6 +59,17 @@ body {
 
 .fa-solid:hover {
     color: #ff0026;
+}
+.joinTeam{
+    text-align: center;
+}
+.joinTeam .join{
+    transition-duration: 0.5s;
+    border: 0.5px;
+}
+.joinTeam .join:hover{
+    background-color: rgb(175, 175, 175);
+    color: white;
 }
 
 .icons{

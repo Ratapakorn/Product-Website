@@ -51,6 +51,7 @@
 
 .vertnavbar ul li a:hover {
     background-color: #575757;
+    transition-duration: 1s;
 }
 
 .vertnavbar ul .loginregis {

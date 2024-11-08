@@ -1,0 +1,10 @@
+body {
+    /* font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+     */
+     
+    font-family: Arial, sans-serif;
+    /* text-align: center; */
+    margin-left: 15%;  /* Matches navbar width to avoid overlap */
+    width: 82%;
+    background-color: #f3f4f6;
+}

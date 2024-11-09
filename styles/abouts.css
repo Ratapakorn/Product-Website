@@ -6,7 +6,7 @@ body {
     /* text-align: center; */
     margin-left: 15%;  /* Matches navbar width to avoid overlap */
     width: 82%;
-    background-color: #f3f4f6;
+    background-color: #feffff;
 }
 .horizontal{
     background-color: #333;
@@ -19,7 +19,9 @@ body {
     color: black;
   }
 .horizontal li {
+    /* position elements hoeizntally  */
     display: inline;
+    /* horizontally tat the end */
     float: inline-end;
   }
 

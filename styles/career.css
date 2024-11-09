@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     /* text-align: center; */
     margin-left: 15%;  /* Matches navbar width to avoid overlap */
-    width: 82%;
+    /* width: 100vw; */
     background-color: #f3f4f6;
 }
 .header{
@@ -59,11 +59,12 @@ body {
 .highlight {
     color: #007bff;
 }
-
+/* sets the flexible length on flexible items with display flex to relocate it easily for flexible layout */
 .work-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
+    /* with this we wrap the flex items into multiple lines  */
     flex-wrap: wrap;
     margin-top: 20px;
 }
@@ -249,7 +250,9 @@ body {
 .secondPart{
     margin-left: 5%;
 }
-@media (max-width: 768px) {
+
+/* responsiveness if the screen size smaller or equal to 768 apply those */
+@media (max-width: 768px) { 
     .job-card {
         flex-direction: column;
     }

@@ -6,91 +6,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhi GmbH</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="styles/abouts.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <header>
-         <img src="images/AbhiGmbh_Logo.png" alt="Abhi_GMbH"/>
-    </header>
-<hr>
-<!--    Navigation bar-->
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropdown">Products
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="wooden_crafted_toys/product_landing_page.html">Toys</a>
-                <a href="wooden_decoration_products/product_landing_page.html">Decorations</a>
-            </div>
-        </div>
-        <a href="customer.html">Customer</a>
-        <a href="about.html">About</a>
-        <a href="registration.html">Registration</a>
-        <a href="login.html">Log in</a>
+    <!--    Navigation bar-->
+    <div class="container">
+        <nav class="vertnavbar">
+            <ul>
+                <li class="logo"><img src="images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <div class="dropdownfunctionality">
+                    <li><a class="dropdownbutton" href="wooden_crafted_toys/product_landing_page.html"><i
+                                class="fa fa-archive"></i>Products</a></li>
+                    <div class="dropdowncontent">
+                        <a href="wooden_crafted_toys/product_landing_page.html">Toys</a>
+                        <a href="wooden_crafted_decorations/product_landing_page.html">Decorations</a>
+                    </div>
+                </div>
+                <!-- <li><a href="customer.html"><i class="fa fa-user"></i>User Information</a></li> -->
+                <li><a href="about.html"><i class="fa fa-building"></i>About</a></li>
+                <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li> <!-- we don't have a contact page yet -->
+                <li class="loginregis"><a href="login.html">Login / Registration</a></li>
+            </ul>
+        </nav>
+
     </div>
 
-    <h2>Register</h2>
-    <form>
-        <fieldset>
-            <legend>User Information</legend>
-            <label>
-                Username
-            </label>
-            <input type="text" required/>
-            <br/>
-            <label>
-                Password
-            </label>
-            <input type="password"  required/><br>
-            <label>
-                Date of Birth:
-            </label>
-            <input type="date" required/><br><br>
-        </fieldset><br>
-        <fieldset>
-        <legend>
-            What is your Gender?
-        </legend>
-        <input name="gender" type="radio" required/>
-        <label>Male</label><br>
-        <input name="gender" type="radio" required/>
-        <label>Female</label><br>
-        <input name="gender" type="radio"  required/>
-        <label>Others: </label>
-        <input name="gender" type="text" required/>
-        </fieldset><br>
 
-        <fieldset>
-            <legend>
-                How did you hear about this webshop?
-            </legend>
-            <input type="checkbox" required/>
-            <label>Internet</label><br>
-            <input type="checkbox"  required/>
-            <label>Colleagues</label>
-        </fieldset><br>
 
+    
+    <div class="mainContainer">
+        <i class="fas fa-handshake fa-3x" style="color: #333; margin-bottom: 10px;"></i>
+        <h1 style="font-family: cursive; color: #333;">Register to Abhi GmbH!</h1>
         
+        <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" class="input-field" />
+        </div>        
+        <div class="input-container">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" class="input-field" />
+        </div>
+        
+        <div class="input-container">
+            <i class="fas fa-regular fa-eye"></i>
+            <input type="password" placeholder="Repeat Password" class="input-field" />
+        </div>
+        
+        <div class="input-container">
+            <i class="fas fa-calendar"></i>
+            <input type="date" placeholder="Date of Birth" class="input-field" />
+        </div>
 
-        <fieldset>
-            <legend>Which type of products are you interested in?</legend>
-        <select>
-            <option>Toys</option>
-            <option>Decorations</option>
-        </select>
-        </fieldset>
+        <div class="input-container">
+            <!-- <i class="fas fa-lock"></i> -->
+            <select>
+                <option selected value="0">Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Mentally ill</option>
+              </select>
+        </div>
+        
+        <button class="btn">Register</button>
         <br>
-        <button type="submit">register</button>
-            </form> 
-            <a href="login.html">
-            <button >cancel</button>
-        </a>   
-    </form>
-    <hr>
-    <footer>
+        <a href="login.html" class="register">Already a user?<span> login!</span></a>
+        <div class="topFooter">
+            <div class="footer-item">
+                <i class="fas fa-cart-shopping" style="color: #333;"></i>
+                <span>Handcrafted products</span>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-thumbs-up" style="color: #333;"></i>
+                <span>Enhanced Quality</span>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-truck" style="color: #333;"></i>
+                <span>Free delivery</span>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
       Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
-  </footer>
+  </footer> -->
+
+    <!-- footer icons  -->
+    <div class="icons">
+        <i class="cls fa-brands fa-instagram"></i>
+        <i class="cls fa-brands fa-facebook"></i>
+        <i class="cls fa-brands fa-twitter"></i>
+        <i class="cls fa-solid fa-envelope"></i>
+    </div>
+    <footer>
+        Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
+    </footer>
 
 </body>
 </html>

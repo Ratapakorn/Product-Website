@@ -1,0 +1,79 @@
+* {
+    font-family: 'Libre Franklin', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 0 10px 10px 10px;
+  }
+  .grid-item {
+    background-color: #f3f4f6;
+    border: none;
+    /* border: 0.5px solid rgba(148, 146, 146, 0.8); */
+    padding: 2%;
+    /* font-size: 30px; */
+    /* margin: 1%; */
+    text-align: center;
+    margin-top: 1%;
+    border-bottom: 1px solid #949494;
+  }
+
+  .grid-item:hover {
+    background-color: #e3e3e3;
+  
+  }
+  
+
+  p{
+    text-align: left;
+    margin: 2% 0 0 0;
+    padding: 0;
+    font-size: 2.5vh;
+  }
+  
+  .producttitle {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 4vh;
+  }
+
+  .productprice {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 3vh;
+  }
+
+  .prodimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    width: 96%;
+  }
+
+  .setcenter {
+
+  }
+  
+  .AddProd {
+    text-align: right;
+    border-radius: 50px;
+    font-size: 2.7vh;
+    font-weight: bold;
+    background-color: white;
+    color: #f7b500;
+    border-color: #f7b500;
+    border-style: solid;
+    padding: 2% 4% 2% 4%;
+  }
+
+  .AddProd:hover {
+    background-color: #f7b500;
+    color: white;
+  }

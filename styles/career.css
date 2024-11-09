@@ -7,6 +7,7 @@ body {
     margin-left: 15%;  /* Matches navbar width to avoid overlap */
     /* width: 100vw; */
     background-color: #f3f4f6;
+    max-width: 76.45vw;
 }
 .header{
     background-image: url('../images/bg_career.jpeg');

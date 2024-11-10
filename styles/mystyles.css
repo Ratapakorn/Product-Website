@@ -77,6 +77,10 @@
     transition: background-color 0.3s;
 }
 
+i{
+    color: white;
+}
+
 .dropdownbutton:hover {
     background-color: #575757;
 }

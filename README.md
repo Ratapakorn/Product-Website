@@ -91,6 +91,25 @@ It is up to you what kind of information you are aiming to present in this task 
 need a button to add this product to the shopping cart. The shopping cart itself will be implemented
 in later exercise sheets. 
 
+# Task Sheet 2:
+
+## Sheet 2 Task 1 (First style definitions)
+• Change the font-family to the one of your choice and the font-size to 12.<br>
+• Change paragraphs to justify using text-align to right.<br>
+• Change the background-color of table headers to light gray.<br>
+• Center the entire content.<br>
+• Realize different styles for the links in the document.<br>
+• Additionally change the style of the links when the mouse is placed over the link.
+
+## Sheet 2 Task 2 (Forms)
+Configure the form fields and change their appearance. Frames and spacing should be changed. A
+uniform font-face is also required. The font size is to be adjusted dependent on the usage of the
+text, e.g., header, paragraph etc.
+
+## Sheet 2 Task 3 (Freestyle)
+Now, you can design your we-shop as you like. Use individual images and develop your own CI
+(Corporate Identity). All pages should follow a common style that you implement in the file
+“mystyle.css”.
 
 ### Table of Contents:
 - index.html: The First and Foremost Page visited in a website. This contains all the information a User needs to know on their first visit, such as Registering an Account to the Webshop or Viewing possible products available.

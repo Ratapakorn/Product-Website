@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="keywords" 
-        content="Abhi, Abhi GMbH, Abhi registration"/>
+    <meta name="keywords" content="Abhi, Abhi GMbH, Abhi registration" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhi GmbH</title>
-    <link rel="stylesheet" href="styles/mystyles.css">
-    <link rel="stylesheet" href="styles/abouts.css">
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/registration.css">
+    <link rel="stylesheet" href="../styles/mystyles.css">
+    <link rel="stylesheet" href="../styles/abouts.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
     <!--    Navigation bar-->
     <div class="container">
@@ -29,7 +30,8 @@
                 </div>
                 <!-- <li><a href="customer.html"><i class="fa fa-user"></i>User Information</a></li> -->
                 <li><a href="about.html"><i class="fa fa-building"></i>About</a></li>
-                <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li> <!-- we don't have a contact page yet -->
+                <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li>
+                <!-- we don't have a contact page yet -->
                 <li class="loginregis"><a href="login.html">Login / Registration</a></li>
             </ul>
         </nav>
@@ -38,61 +40,45 @@
 
 
 
-    
+
     <div class="mainContainer">
-        <i class="fas fa-handshake fa-3x" style="color: #333; margin-bottom: 10px;"></i>
-        <h1 style="font-family: cursive; color: #333;">Register to Abhi GmbH!</h1>
-        
+        <i class="fas fa-headset fa-3x" style="color: #333; margin-bottom: 10px;"></i>
+
+        <h1 style="font-family: cursive; color: #333;">Contact form!</h1>
+        <p style="margin-bottom: 5%;"> This enables our users to freely provide feedbacks and also any queries that
+            needs to be assisted. Our support team will reach out to you as early as possible!</p>
+
+
         <div class="input-container">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" class="input-field" />
-        </div>        
-        <div class="input-container">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" class="input-field" />
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Enter your email" class="input-field" />
         </div>
-        
         <div class="input-container">
-            <i class="fas fa-regular fa-eye"></i>
-            <input type="password" placeholder="Repeat Password" class="input-field" />
-        </div>        
-        
-        
-        <div class="input-container">
-            <i class="fas fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Email" class="input-field" />
-        </div>
-        
-        <div class="input-container">
-            <i class="fas fa-calendar"></i>
-            <input type="date" placeholder="Date of Birth" class="input-field" />
+            <i class="fas fa-file-lines"></i>
+            <input type="text" placeholder="Query subject" class="input-field" />
         </div>
 
         <div class="input-container">
-            <!-- <i class="fas fa-lock"></i> -->
-            <select>
-                <option selected value="0">Gender</option>
-                <option value="1">Male</option>
-                <option value="2">Female</option>
-                <option value="3">Mentally ill</option>
-              </select>
+            <i class="fas fa-regular fa-book"></i>
+            <textarea type="text" placeholder="Query" class="input-field" rows="5" ></textarea>
         </div>
-        
-        <button class="btn">Register</button>
+
+        <button class="btn">Send
+            <i class="fas fa-paper-plane" style="color: aliceblue; margin-left: 5%;"></i></button>
         <br>
-        <a href="login.html" class="register">Already a user?<span> login!</span></a>
+        <a href="about.html" class="register">Go back / cancel !</a>
         <div class="topFooter">
             <div class="footer-item">
-                <i class="fas fa-cart-shopping" style="color: #333;"></i>
-                <span>Handcrafted products</span>
+                <i class="fas fa-gauge" style="color: #333;"></i>
+                <span>Fast response</span>
             </div>
             <div class="footer-item">
-                <i class="fas fa-thumbs-up" style="color: #333;"></i>
-                <span>Enhanced Quality</span>
+                <i class="fas fa-users" style="color: #333;"></i>
+                <span>Free assistance</span>
             </div>
             <div class="footer-item">
-                <i class="fas fa-truck" style="color: #333;"></i>
-                <span>Free delivery</span>
+                <i class="fas fa-hand" style="color: #333;"></i>
+                <span>Reliable and easy</span>
             </div>
         </div>
     </div>
@@ -112,4 +98,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -27,3 +27,21 @@ select {
 option{
     color: #333;
 }
+
+.icons{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  height: 20px;
+}
+.icons .fa-brands:hover{
+  color: #ff0026;
+
+}
+.cls{
+  color:black;
+  padding: 0 10px ;
+}
+footer{
+  margin: inherit;
+}

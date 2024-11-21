@@ -1,0 +1,59 @@
+
+Task 1 (Registration, Login, Customer Profile)
+    The registration, login, and customer’s profile forms should check
+the input values and visualize whether it is correct or whether there
+are errors.
+
+    If there are errors, the form should not be able to be sent. In case
+of errors, the corresponding form field must be visualized in red,
+otherwise visualize the field in green.
+========================DONE===================================
+    Please check at least the following aspects:
+• The selected username should consist at least of five characters
+• The selected username must contain at least one capital letter and
+one lower case letter.
+• The password must have at least 10 characters
+• The password repetition must correspond to the password
+=========================DONE===================================
+
+
+
+Task 2 (Style Modifications)
+    In the previous task sheet you implemented your first CSS style.
+In this task, you should be able to change the style using JavaScript.
+
+    Change the visibility of the web shop to a “dark mode” style.
+That means the background should use dark colors (e.g., black, brown etc.),
+and the foreground must be correspondingly visualized in bright colors.
+It must be possible to return back to the initial style definition.
+
+    Additionally, you can change the layout between a horizontal
+(i.e., for personal computers) and a vertical format (i.e., for smartphones).
+
+
+
+Task 3 (Collection List)
+    Use JavaScript to collect products from a list in a collection list.
+You can add appropriate buttons with the text “add to collection list”
+to the pages showing different products. An additional field should allow
+to define the number of selected items.
+
+    The collection list should be presented at the same page below the item
+selection area (it is not the shopping cart page!).
+
+Note: You don’t have to save them in additional files.
+
+
+
+Task 4 (Calculating Prices and Further Functions)
+    Define a JavaScript function getTotalPrice(double priceWOTax) which
+calculates a price with taxes of 19%. Use this function to show the price
+with and without taxes. You can use an input field to define the price without
+taxes. Use this value for the parameter priceWOTax to calculate the remaining
+values.
+
+    In the second part of this task you should define at least two further
+functions in JavaScript that help to change functionality at the client’s side.
+You are free to define your own functions, however, you must implement at least 10
+lines of code for each function and to use them in order to show the new
+functionality.

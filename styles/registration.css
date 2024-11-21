@@ -1,7 +1,7 @@
 body {
     /* font-family: Copperplate, "Copperplate Gothic Light", fantasy;
      */
-     
+
     font-family: Arial, sans-serif;
     /* text-align: center; */
     margin-left: 15%;  /* Matches navbar width to avoid overlap */
@@ -23,6 +23,20 @@ select {
     cursor: pointer;
     color: #888;
   }
+
+.valid{
+    border: 2px solid green;
+    background-color: #79f16c;
+
+}
+.invalid{
+    border: 2px solid red;
+    background-color: #f6d1d1;
+}
+
+.error-message{
+    color: red;
+}
   
 option{
     color: #333;
@@ -34,6 +48,7 @@ option{
   margin-bottom: 2%;
   height: 20px;
 }
+
 .icons .fa-brands:hover{
   color: #ff0026;
 
@@ -42,6 +57,8 @@ option{
   color:black;
   padding: 0 10px ;
 }
+
 footer{
   margin: inherit;
 }
+

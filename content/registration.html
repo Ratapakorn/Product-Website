@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="keywords" 
+    <meta name="keywords"
         content="Abhi, Abhi GMbH, Abhi registration"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script>
+
+    <script
+            src="../JS_files/registration.js" defer>
     </script>
+
 </head>
 <body>
     <!--    Navigation bar-->
@@ -30,7 +33,7 @@
                 </div>
                 <!-- <li><a href="customer.html"><i class="fa fa-user"></i>User Information</a></li> -->
                 <li><a href="about.html"><i class="fa fa-building"></i>About</a></li>
-                <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li> 
+                <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li>
                 <li class="loginregis"><a href="login.html">Login / Registration</a></li>
             </ul>
         </nav>
@@ -40,46 +43,62 @@
 
 
     <div>
+        <form id="registrationForm">
     <div class="mainContainer">
         <i class="fas fa-handshake fa-3x" style="color: #333; margin-bottom: 10px;"></i>
         <h1 style="font-family: cursive; color: #333;">Register to Abhi GmbH!</h1>
-        
+
         <div class="input-container">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" class="input-field" />
-        </div>        
+            <input type="text" placeholder="Username" class="input-field" id="username"/>
+        </div>
+        <p id="userNameLenError" class="error-message"></p>
+        <p id="userNameCharError" class="error-message"></p>
+
+
+
         <div class="input-container">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" class="input-field" />
-        </div>
-        
-        <div class="input-container">
-            <i class="fas fa-regular fa-eye"></i>
-            <input type="password" placeholder="Repeat Password" class="input-field" />
-        </div>        
-        
-        
-        <div class="input-container">
-            <i class="fas fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Email" class="input-field" />
-        </div>
-        
-        <div class="input-container">
-            <i class="fas fa-calendar"></i>
-            <input type="date" placeholder="Date of Birth" class="input-field" />
+            <input type="password" placeholder="Password" class="input-field" id="password1"/>
         </div>
 
         <div class="input-container">
+            <i class="fas fa-regular fa-eye"></i>
+            <input type="password" placeholder="Repeat Password" class="input-field" id="password2" />
+        </div>
+        <p id="passwordMatchError" class="error-message"></p>
+        <p id="passwordLenError" class="error-message"></p>
+
+        <div class="input-container">
+            <i class="fas fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Email" class="input-field" id="email1"/>
+        </div>
+
+         <div class="input-container">
+            <i class="fas fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Repeat Email" class="input-field" id="email2"/>
+        </div>
+        <p id="emailMatchError" class="error-message"></p>
+        <p id="emailValidError" class="error-message"></p>
+
+        <div class="input-container">
+            <i class="fas fa-calendar"></i>
+            <input type="date" placeholder="Date of Birth" class="input-field" id="birth_date"/>
+        </div>
+        <p id="birthDateError" class="error-message"></p>
+
+        <div class="input-container">
             <!-- <i class="fas fa-lock"></i> -->
-            <select>
+            <select id="gender">
                 <option selected value="0">Gender</option>
                 <option value="1">Male</option>
                 <option value="2">Female</option>
                 <option value="3">Mentally ill</option>
-              </select>
+            </select>
         </div>
-        
-        <button class="btn">Register</button>
+        <p id="genderError" class="error-message" ></p>
+
+        <button type="submit" class="btn" >Register</button>
         <br>
         <a href="login.html" class="register">Already a user?<span> login!</span></a>
         <div class="topFooter">
@@ -97,7 +116,7 @@
             </div>
         </div>
     </div>
-
+    </form>
     <!-- footer icons  -->
 
     <footer class="mainContainer">

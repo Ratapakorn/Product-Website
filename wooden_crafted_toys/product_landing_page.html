@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="../styles/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/themeButton.css">
+    <script
+        src="../JS_files/darkmode.js" defer>
+    </script>
+    <script
+    src="../JS_files/shoppingList.js" defer>
+</script>
 </head>
 <body>
   <div class="container">
@@ -32,125 +39,53 @@
       </ul>
   </nav>
     <div class="content">
+      <button id="themebutton", onclick="toggleMode()">test</button>
       <h1>Products</h1>
       <div class="grid-container">
         <div class="grid-item">
-          <a href="Product1_page.html">
             <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
             <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
+            <a href="Product1_page.html"><p class="producttitle">Product 0</p></a>
             <p class="productprice">€10.348.692</h3>
             <br>
             <br>
             <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
+              <button class="AddProd", onclick="addItem('Product 0', '€10.348.692','desc')">ADD TO CART</button>
             </div>
-          </a>
         </div>
         <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_2.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
+          <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
+          <p>Decorations</p>
+          <a href="Product1_page.html"><p class="producttitle">Product 1</p></a>
+          <p class="productprice">€59.000</h3>
+          <br>
+          <br>
+          <div class="setCenter">
+            <button class="AddProd", onclick="addItem('Product 1', '€59.000','desc')">ADD TO CART</button>
+          </div>
+      </div>
+      <div class="grid-item">
+        <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
+        <p>Decorations</p>
+        <a href="Product1_page.html"><p class="producttitle">Product 2</p></a>
+        <p class="productprice">€10.348.692</h3>
+        <br>
+        <br>
+        <div class="setCenter">
+          <button class="AddProd", onclick="addItem('Product 2', '€10.348.692','desc')">ADD TO CART</button>
         </div>
-        <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_2.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="Product1_page.html">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-            <p>Decorations</p>
-            <p class="producttitle">Product Name</p>
-            <p class="productprice">€10.348.692</h3>
-            <br>
-            <br>
-            <div class="setCenter">
-              <button class="AddProd">ADD TO CART</button>
-            </div>
-          </a>
-        </div>
+    </div>
+    <div class="grid-item">
+      <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
+      <p>Decorations</p>
+      <a href="Product1_page.html"><p class="producttitle">Product 3</p></a>
+      <p class="productprice">€10.348.692</h3>
+      <br>
+      <br>
+      <div class="setCenter">
+        <button class="AddProd", onclick="addItem('Product 3', '€10.348.692','desc')">ADD TO CART</button>
+      </div>
+  </div>
       </div>
       <!-- <ul>
         <li>
@@ -175,7 +110,9 @@
       <footer>
         Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
     </footer> -->
+    <ul id="itemList"></ul>
     </div>
+    
   </div>
   
 </body>

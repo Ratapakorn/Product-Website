@@ -25,7 +25,15 @@ body.dark-background .mainContainer{
     border-color: #555;
 }
 
-body.dark-background i {
+body.dark-background i, body.dark-background li {
     color: white;
 }
-/*incase there is form */
+
+body.dark-background  h1 {
+    color: white;
+}
+
+body.dark-background .grid-item, body.dark-background .grid-container, body.dark-background p {
+    background-color: black;
+    color: white;
+}

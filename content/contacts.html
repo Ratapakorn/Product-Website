@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../styles/abouts.css">
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/registration.css">
+    <link rel="stylesheet" href="../styles/themeButton.css">
+    <script
+        src="../JS_files/darkmode.js" defer>
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
@@ -19,7 +23,7 @@
         <nav class="vertnavbar">
             <ul>
                 <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
-                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
                 <div class="dropdownfunctionality">
                     <li><a class="dropdownbutton" href="wooden_crafted_toys/product_landing_page.html"><i
                                 class="fa fa-archive"></i>Products</a></li>
@@ -41,9 +45,10 @@
 
 
     <div class="mainContainer">
-        <i class="fas fa-headset fa-3x" style="color: #333; margin-bottom: 10px;"></i>
+        <button id="themebutton", onclick="toggleMode()">test</button>
+        <i class="fas fa-headset fa-3x" style=" margin-bottom: 10px;"></i>
 
-        <h1 style="font-family: cursive; color: #333;">Contact form!</h1>
+        <h1 style="font-family: cursive">Contact form!</h1>
         <p style="margin-bottom: 5%;"> This enables our users to freely provide feedbacks and also any queries that
             needs to be assisted. Our support team will reach out to you as early as possible!</p>
 

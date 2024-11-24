@@ -1,0 +1,31 @@
+#themebutton{
+    margin-top: 1px;
+    margin-right: 2px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+form {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-background {
+    background-color: black;
+    color: white;
+}
+
+body.dark-background .mainContainer{
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.dark-background i {
+    color: white;
+}
+/*incase there is form */

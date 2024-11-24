@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+    
     <script
             src="../JS_files/registration.js" defer>
+    </script>
+    <link rel="stylesheet" href="../styles/themeButton.css">
+    <script
+        src="../JS_files/darkmode.js" defer>
     </script>
 
 </head>
@@ -22,7 +26,7 @@
         <nav class="vertnavbar">
             <ul>
                 <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
-                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
                 <div class="dropdownfunctionality">
                     <li><a class="dropdownbutton" href="wooden_crafted_toys/product_landing_page.html"><i
                                 class="fa fa-archive"></i>Products</a></li>
@@ -41,12 +45,13 @@
     </div>
 
 
-
     <div>
+        <button id="themebutton" onclick="toggleMode()">test</button>
         <form id="registrationForm">
-    <div class="mainContainer">
-        <i class="fas fa-handshake fa-3x" style="color: #333; margin-bottom: 10px;"></i>
-        <h1 style="font-family: cursive; color: #333;">Register to Abhi GmbH!</h1>
+        <div class="mainContainer">
+        
+        <i id="titleIcon" class="fas fa-handshake fa-3x" style=" margin-bottom: 10px;"></i>
+        <h1 id="title" style="font-family: cursive;">Register to Abhi GmbH!</h1>
 
         <div class="input-container">
             <i class="fas fa-user"></i>

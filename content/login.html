@@ -10,15 +10,20 @@
     <link rel="stylesheet" href="../styles/abouts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Abhi GmbH</title>
+    <link rel="stylesheet" href="../styles/themeButton.css">
+    <script
+        src="../JS_files/darkmode.js" defer>
+    </script>
 </head>
 <body>
 
     <!--    Navigation bar-->
     <div class="container">
+        
         <nav class="vertnavbar">
             <ul>
                 <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
-                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
                 <div class="dropdownfunctionality">
                     <li><a class="dropdownbutton" href="wooden_crafted_toys/product_landing_page.html"><i
                                 class="fa fa-archive"></i>Products</a></li>
@@ -36,8 +41,9 @@
     </div>
 
     <div class="mainContainer">
-        <i class="fas fa-headset fa-3x" style="color: #333; margin-bottom: 10px;"></i>
-        <h1 style="font-family: cursive; color: #333;">Login to Abhi GmbH!</h1>
+        <button id="themebutton", onclick="toggleMode()">test</button>
+        <i class="fas fa-headset fa-3x" style=" margin-bottom: 10px;"></i>
+        <h1 style="font-family: cursive;">Login to Abhi GmbH!</h1>
         
         <div class="input-container">
             <i class="fas fa-user"></i>
@@ -54,15 +60,15 @@
         <a href="registration.html" class="register">Not a user?<span> register!</span></a>
         <div class="topFooter">
             <div class="footer-item">
-                <i class="fas fa-clock" style="color: #333;"></i>
+                <i class="fas fa-clock" style=""></i>
                 <span>Time and Resource Efficiency</span>
             </div>
             <div class="footer-item">
-                <i class="fas fa-thumbs-up" style="color: #333;"></i>
+                <i class="fas fa-thumbs-up" style=""></i>
                 <span>Enhanced Quality and Consistency</span>
             </div>
             <div class="footer-item">
-                <i class="fas fa-cogs" style="color: #333;"></i>
+                <i class="fas fa-cogs" style=""></i>
                 <span>Versatility and Adaptability</span>
             </div>
         </div>

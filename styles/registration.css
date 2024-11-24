@@ -23,15 +23,9 @@ select {
     cursor: pointer;
     color: #888;
   }
-
-.valid{
-    border: 2px solid green;
-    background-color: #79f16c;
-
-}
 .invalid{
     border: 2px solid red;
-    background-color: #f6d1d1;
+    /* background-color: #f6d1d1; */
 }
 
 .error-message{

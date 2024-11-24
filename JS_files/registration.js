@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     const passwordMatchError = document.getElementById("passwordMatchError");
     const passwordLenError = document.getElementById("passwordLenError");
     const emailMatchError = document.getElementById("emailMatchError");
+    const emailEmptyError = document.getElementById("emailEmptyError");
     const emailValidError = document.getElementById("emailValidError");
     const birthDateError = document.getElementById("birthDateError");
     const genderError = document.getElementById("genderError");
@@ -38,21 +39,28 @@ document.addEventListener("DOMContentLoaded", () =>{
             userNameLenError.textContent = "Username must be at least 5 characters!";
             isValid = false;
         } else{
-            username.classList.add("valid");
-            username.classList.remove("invalid");
-        }
-        // username chars check:__________________________
-        if (!/[a-z]/.test(username.value) || !/[A-Z]/.test(username.value)){
-            username.classList.add("invalid");
-            username.classList.remove("valid");
-            userNameCharError.textContent += "Username should contain at least one capital and lowercase letter!";
-            isValid = false;
-        } else{
+            // username chars check:__________________________
+            if (!/[a-z]/.test(username.value) || !/[A-Z]/.test(username.value)){
+                username.classList.add("invalid");
+                username.classList.remove("valid");
+                userNameCharError.textContent += "Username should contain at least one capital and lowercase letter!";
+                isValid = false;
+            } else{
+                username.classList.add("valid");
+                username.classList.remove("invalid");
+            }
             username.classList.add("valid");
             username.classList.remove("invalid");
         }
 
-        // password match check:_______________________
+        // password length check:_____________________
+        if (password1.value.length < 10){
+            password1.classList.remove("valid");
+            password1.classList.add("invalid");
+            passwordLenError.textContent += "Password should be at least 10 characters!";
+            isValid = false;
+        }else{
+                    // password match check:_______________________
         if (password1.value !== password2.value){
             password1.classList.add("invalid");
             password2.classList.add("invalid");
@@ -65,42 +73,28 @@ document.addEventListener("DOMContentLoaded", () =>{
             password2.classList.add("valid");
             password1.classList.remove("invalid");
             password2.classList.remove("invalid");
-        }
-        // password length check:_____________________
-        if (password1.value.length < 10){
-            password1.classList.add("invalid");
-            password2.classList.add("invalid");
-            password1.classList.remove("valid");
-            password2.classList.remove("valid");
-            passwordLenError.textContent += "Password should be at least 10 characters!";
-            isValid = false;
-        }else{
-            password1.classList.add("valid");
-            password2.classList.add("valid");
-            password1.classList.remove("invalid");
-            password2.classList.remove("invalid");
-        }
+        }}
 
         // email match check:_______________
-        if (email1.value !== email2.value){
+        if (email1.value === ""){
             email1.classList.add("invalid");
-            email2.classList.add("invalid");
             email1.classList.remove("valid");
-            email2.classList.remove("valid");
-            emailMatchError.textContent += "Emails do not match!";
+            emailEmptyError.textContent += "This field is required!";
             isValid = false;
         }else{
-            email1.classList.add("valid");
-            email2.classList.add("valid");
-            email1.classList.remove("invalid");
-            email2.classList.remove("invalid");
-        }
+         if(email1.value!==email2.value){
+                email1.classList.add("invalid");
+                email2.classList.add("invalid");
+                email1.classList.remove("valid");
+                email2.classList.remove("valid");
+                emailMatchError.textContent += "Emails do not match!";
+                isValid = false;
+
+         }
         // email validity check:___________________
-        if (!/.+@.+\..+/.test(email1.value)){
+        else if (!/.+@.+\..+/.test(email1.value)){
             email1.classList.add("invalid");
-            email2.classList.add("invalid");
             email1.classList.remove("valid");
-            email2.classList.remove("valid");
             emailValidError.textContent += "Invalid email!";
             isValid = false;
         }else{
@@ -108,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             email2.classList.add("valid");
             email1.classList.remove("invalid");
             email2.classList.remove("invalid");
+        }
         }
 
         // birthdate check:_____________________

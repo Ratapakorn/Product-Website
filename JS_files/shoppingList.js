@@ -34,5 +34,36 @@ function addItem(productName, productPrice, productDescription){
     inputItem.value = '';
 }
 
-const itemList = document.getElementById('itemList');
+function formatPriceToNumber(price) {
+    const withoutCurrencyAndDots = price.replace(/[^0-9]/g, ''); //^ is not, and g makes sures its global
 
+    const number = parseFloat(withoutCurrencyAndDots);
+
+    return number;
+}
+
+function getTotal(){
+    let sum = 0;
+    for (const prod of shoppingList){
+        sum += formatPriceToNumber(prod.price)
+    }
+    return sum;
+}
+
+function getPrice(){
+    const priceDiv = document.getElementById('price');
+    let exist = priceDiv.querySelector('p');
+    if (exist) {
+        // Replace the existing paragraph
+        exist.textContent = "Total: " + getTotal() + " Euro, after 19% Tax is around: " + Math.round(getTotalPrice(getTotal()));
+    }else{
+        const price = document.createElement('p');
+        price.textContent = "Total: " + getTotal() + " Euro, after 19% Tax is around: " + Math.round(getTotalPrice(getTotal()));
+        priceDiv.appendChild(price);
+    }
+}
+
+/* Task 4 */
+function getTotalPrice(priceWOTax){
+    return priceWOTax * 1.19;
+}

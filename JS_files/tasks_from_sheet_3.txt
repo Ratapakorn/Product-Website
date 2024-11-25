@@ -1,5 +1,5 @@
 
-Task 1 (Registration, Login, Customer Profile)
+Task 3.1 (Registration, Login, Customer Profile)
     The registration, login, and customer’s profile forms should check
 the input values and visualize whether it is correct or whether there
 are errors.
@@ -18,7 +18,7 @@ one lower case letter.
 
 
 
-Task 2 (Style Modifications)
+Task 3.2 (Style Modifications)
     In the previous task sheet you implemented your first CSS style.
 In this task, you should be able to change the style using JavaScript.
 
@@ -32,7 +32,7 @@ It must be possible to return back to the initial style definition.
 
 
 
-Task 3 (Collection List)
+Task 3.3 (Collection List)
     Use JavaScript to collect products from a list in a collection list.
 You can add appropriate buttons with the text “add to collection list”
 to the pages showing different products. An additional field should allow
@@ -45,7 +45,7 @@ Note: You don’t have to save them in additional files.
 
 
 
-Task 4 (Calculating Prices and Further Functions)
+Task 3.4 (Calculating Prices and Further Functions)
     Define a JavaScript function getTotalPrice(double priceWOTax) which
 calculates a price with taxes of 19%. Use this function to show the price
 with and without taxes. You can use an input field to define the price without

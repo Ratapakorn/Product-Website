@@ -10,6 +10,9 @@
 <body>
     <header>
         <img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH"/>
+        <script
+        src="./JS_files/navbar.js" defer>
+    </script>
     </header>
 <hr>
 <!--    Navigation bar-->

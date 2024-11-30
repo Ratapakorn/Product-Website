@@ -1,105 +1,99 @@
-/*Push Content to right and keep navbar to the left*/
-.container {
-    padding: 0;
-    display: flex;
-}
-
-.vertnavbar {
-    width: 15%;
-    height: 100vh; /*full viewport height */
-    background-color: #333;
-    padding: 0 0 0 0;
-    top: 0;/*remove space on the top */
-    left: 0; /*remove space on the left */
-    position: fixed;  /* Fixes the navbar to the left side */
-}
-
-.vertnavbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.vertnavbar ul li {
-    padding: 5% 5% 0 5%;
-    
-}
-
-.vertnavbar ul .logo {
-    padding: 0 5% 0 5%;
-    
-}
-
-.vertnavbar ul img
-{
-    width: 100%;
-}
-
-.vertnavbar ul li a {
+/* Reset padding and margin for the body */
+body {
+    margin: 0;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 90%;
+}
+
+/* Style the navbar container */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden; /* Prevents items from spilling over */
+    display: flex;
+    justify-content: space-around; /* Distributes items evenly */
+    align-items: center; /* Vertically center items */
+    padding: 10px 0; /* Adds space above and below navbar items */
+}
+
+/* Style for the navbar items */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ensures the navbar items are displayed horizontally */
+    width: 100%;
+    justify-content: center; /* Center aligns the items */
+    align-items: center; /* Ensures vertical centering of items */
+}
+
+.navbar ul li {
+    margin: 0 10px; /* Reduced horizontal spacing between navbar items */
+}
+
+/* Logo styling */
+.navbar ul .logo img {
+    width: 100px; /* Adjust logo size */
+}
+
+/* Link styling */
+.navbar ul li a {
+    font-size: 18px;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 5% 10% 5% 10%;
+    padding: 10px 15px; /* Reduced padding for compact navbar items */
     display: block;
     transition: background-color 0.3s;
 }
 
-.vertnavbar ul li a i {
+.navbar ul li a i {
     margin-right: 10px; /* Space between icon and text */
 }
 
-.vertnavbar ul li a:hover {
+/* Hover effect for links */
+.navbar ul li a:hover {
     background-color: #575757;
-    transition-duration: 1s;
 }
 
-.vertnavbar ul .loginregis {
-    padding: 0 5% 0 5%; 
-    position: absolute; /*doesnt change with dropdown*/
-    bottom: 20px; /* Adjusts the distance from the bottom */
-    width: 90%; /* Ensures it spans the full navbar width */
-    text-align: center;
+/* Login/Registration section, aligned at the right side */
+.navbar ul .loginregis {
+    margin-left: auto; /* Pushes this item to the far right */
 }
 
 /* Dropdown functionality */
-.vertnavbar ul .dropdownfunctionality {
-    /*keep rigid format*/
-    display: block;
+.dropdownfunctionality {
+    position: relative; /* Ensures the dropdown is positioned relative to the button */
 }
 
 .dropdownbutton {
     cursor: pointer;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
     transition: background-color 0.3s;
-}
-
-i{
-    color: white;
 }
 
 .dropdownbutton:hover {
     background-color: #575757;
 }
 
-/* Dropdown Content - initially hidden */
-.vertnavbar ul .dropdowncontent {
-    max-height: 0;
-    overflow: hidden; /*because the max height is zero, overflow hides every thing*/
+/* Dropdown Content */
+.dropdowncontent {
+    display: none; /* Initially hidden */
     background-color: #444;
-    width: 90%; 
-    margin-left: 5%; /* Center the dropdown content */
-    /* border-radius: 5px; rounded corners maybe */
-    transition: max-height 0.2s; /*transitions to this after 0.2 seconds
-     when the max-height variable change*/
+    position: absolute;
+    top: 100%; /* Position just below the button */
+    left: 0;
+    width: 180px; /* Adjust width if necessary */
+    margin-left: 0; /* Center the dropdown directly under the button */
+    border-radius: 5px;
+    z-index: 1; /* Ensures the dropdown is above other content */
 }
 
+/* Style for dropdown links */
 .dropdowncontent a {
     color: white;
-    font-family: 'Libre Franklin', sans-serif;
     font-size: 90%;
     padding: 10px;
     text-decoration: none;
@@ -111,12 +105,32 @@ i{
 }
 
 /* Show dropdown on hover */
-.dropdownfunctionality:hover .dropdowncontent{
-    max-height: 500px; /* Large enough to fit everything */
+.dropdownfunctionality:hover .dropdowncontent {
+    display: block; /* Display the dropdown content */
 }
 
+/* Content styling */
 .content {
-    margin-left: 15%;  /* Matches navbar width to avoid overlap */
-    padding: 0 2% 2% 2%;
-    width: 85%; /* Takes the remaining space */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically on smaller screens */
+    }
+
+    .navbar ul li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+
+    .navbar ul .logo img {
+        width: 80px; /* Adjust logo size on smaller screens */
+    }
+
+    .content {
+        margin-top: 60px; /* Adjust content spacing for fixed navbar */
+    }
 }

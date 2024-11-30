@@ -12,6 +12,9 @@
     <script
         src="../JS_files/darkmode.js" defer>
     </script>
+    <script
+        src="./JS_files/navbar.js" defer>
+    </script>
 </head>
 <body>
     <div class="container">

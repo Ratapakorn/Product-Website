@@ -10,6 +10,9 @@
     <script
         src="../JS_files/darkmode.js" defer>
     </script>
+<script
+        src="../JS_files/navbar.js" defer>
+    </script>
 </head>
 
 <body>
@@ -18,22 +21,7 @@
     </header>
 <hr>
 <!--    Navigation bar-->
-    <div class="topnav">
-        <a class="active" href="../index.php">Home</a>
-        <div class="dropdown">
-            <button class="dropdown">Products
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="../wooden_crafted_toys/product_landing_page.php">Toys</a>
-                <a href="../wooden_decoration_products/product_landing_page.php">Decorations</a>
-            </div>
-        </div>
-        <a href="customer.php">Customer</a>
-        <a href="about.php">About</a>
-        <a href="registration.php">Registration</a>
-        <a href="login.php">Log in</a>
-    </div>
+<div id="navbar-container"></div>
 
     <h2>
         You're logged out!!

@@ -18,6 +18,9 @@
     <script
     src="../JS_files/shoppingList.js" defer>
 </script>
+<script
+        src="./JS_files/navbar.js" defer>
+    </script>
 </head>
 <body>
   <div class="container">

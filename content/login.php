@@ -14,13 +14,16 @@
     <script
         src="../JS_files/darkmode.js" defer>
     </script>
+<script
+        src="../JS_files/navbar.js" defer>
+    </script>
 </head>
 <body>
 
     <!--    Navigation bar-->
     <div class="container">
         
-        <nav class="vertnavbar">
+        <!-- <nav class="vertnavbar">
             <ul>
                 <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
                 <li><a href="../index.php"><i class="fa fa-home"></i>Home</a></li>
@@ -36,12 +39,13 @@
                 <li><a href="contacts.php"><i class="fa fa-phone"></i>Contact</a></li> 
                 <li class="loginregis"><a href="login.php">Login / Registration</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        <div id="navbar-container"></div>
 
     </div>
 
     <div class="mainContainer">
-        <button id="themebutton", onclick="toggleMode()">test</button>
+        <!-- <button id="themebutton", onclick="toggleMode()">test</button> -->
         <i class="fas fa-headset fa-3x" style=" margin-bottom: 10px;"></i>
         <h1 style="font-family: cursive;">Login to Abhi GmbH!</h1>
         

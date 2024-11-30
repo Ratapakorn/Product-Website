@@ -15,41 +15,30 @@
     <script
         src="../JS_files/darkmode.js" defer>
     </script>
+    <script
+        src="../JS_files/navbar.js" defer>
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 
 <body>
     <header>
+        <div id="navbar-container"></div>
         <nav class="horizontal">
             <ul>
                 <!-- yet to add the link conditionally if the user is logged in, it shows his profile and if not it woill take user to its login page  -->
                 <li><a href="customerDetails.php" class="profilePage"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
               </ul>
         </nav>
+        
     </header>
     <!--    Navigation bar-->
+    
     <div class="container">
-        <nav class="vertnavbar">
-            <ul>
-                <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
-                <li><a href="../index.php"><i class="fa fa-home"></i>Home</a></li>
-                <div class="dropdownfunctionality">
-                    <li><a class="dropdownbutton" href="../wooden_crafted_toys/product_landing_page.php"><i
-                                class="fa fa-archive"></i>Products</a></li>
-                    <div class="dropdowncontent">
-                        <a href="../wooden_crafted_toys/product_landing_page.php">Toys</a>
-                        <a href="../wooden_crafted_decorations/product_landing_page.php">Decorations</a>
-                    </div>
-                </div>
-                <!-- <li><a href="customer.php"><i class="fa fa-user"></i>User Information</a></li> -->
-                <li><a href="about.php"><i class="fa fa-building"></i>About</a></li>
-                <li><a href="contacts.php"><i class="fa fa-phone"></i>Contact</a></li> 
-                <li class="loginregis"><a href="login.php">Login / Registration</a></li>
-            </ul>
-        </nav>
+    
 
-    </div>
+    <div class="content">
     <button id="themebutton", onclick="toggleMode()">test</button>
     <article class="about">
         <h1>About Us</h1><br>
@@ -131,6 +120,8 @@
     <footer>
         Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
     </footer>
+    </div>
+    </div>
 
 </body>
 

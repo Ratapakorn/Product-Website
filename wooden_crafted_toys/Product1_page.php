@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../styles/oneproducts.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <script
+        src="./JS_files/navbar.js" defer>
+    </script>
 </head>
 <body>
     <div class="container">

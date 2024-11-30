@@ -16,27 +16,7 @@
     </script>
 </head>
 <body>
-    <!-- <header>
-         <img src="images/AbhiGmbh_Logo.png" alt="Abhi_GMbH"/>
-    </header> -->
-<!-- <hr> -->
-<!--    Navigation bar-->
-    <!-- <div class="topnav">
-        <a class="active" href="index.php">Home</a>
-        <div class="dropdown">
-            <button class="dropdown">Products
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="wooden_crafted_toys/product_landing_page.php">Toys</a>
-                <a href="wooden_decoration_products/product_landing_page.php">Decorations</a>
-            </div>
-        </div>
-        <a href="customer.php">Customer</a>
-        <a href="about.php">About</a>
-        <a href="registration.php">Registration</a>
-        <a href="login.php">Log in</a>
-    </div> -->
+
     <div class="container">
         <nav class="vertnavbar">
             <ul>
@@ -55,9 +35,28 @@
                 <li class="loginregis"><a href="./content/login.php">Login / Registration</a></li>
             </ul>
         </nav>
-        
+
         <div class="content">
-            <button id="themebutton", onclick="toggleMode()">test</button>
+        <?php
+        // Start Buffer
+        ob_start();
+
+        // Include before
+        include 'about.php'; 
+        ?>
+
+        <p>Lorem ipsum</p>
+
+        <?php
+        // Include after
+        include 'after.php';
+
+        // Get buffered output
+        $page = ob_get_clean();
+
+        echo $page;
+        ?>
+        <button id="themebutton", onclick="toggleMode()">test</button>
         <h2>Abhi GmbH</h2>
         <h2>Your right choice!!</h2>
         <p>Welcome to Abhi GmbH, your destination for unique, 

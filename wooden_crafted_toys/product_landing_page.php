@@ -58,6 +58,21 @@
           <p>Decorations</p>
           <a href="Product1_page.php"><p class="producttitle">Product 1</p></a>
           <p class="productprice">€59.000</h3>
+                      
+
+          <!-- <?php
+// Reading the JSON file
+// $jsonData = file_get_contents("productsData/product.json");
+ 
+// Decoding JSON data to PHP array
+// $products = json_decode($jsonData, true);
+ 
+// Displaying each user's details
+// foreach ($products as $product) {
+//     echo "Name: " . $product['name'] . "<br>";
+//     echo "Price: " . $product['price'] . "<br><br>";
+// }
+?> -->
           <br>
           <br>
           <div class="setCenter">

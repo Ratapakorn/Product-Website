@@ -46,7 +46,23 @@
             <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
             <p>Decorations</p>
             <a href="Product1_page.php"><p class="producttitle">Product 0</p></a>
-            <p class="productprice">€10.348.692</h3>
+            <p class="productprice">
+              
+
+            <?php
+// Reading the JSON file
+$jsonData = file_get_contents("productsData/product.json");
+ 
+// Decoding JSON data to PHP array
+$products = json_decode($jsonData, true);
+ 
+// Displaying each user's details
+foreach ($products as $product) {
+    echo "Name: " . $product['name'] . "<br>";
+    echo "Email: " . $product['price'] . "<br><br>";
+}
+?>
+            </h3>
             <br>
             <br>
             <div class="setCenter">

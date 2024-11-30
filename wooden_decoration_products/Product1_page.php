@@ -16,21 +16,21 @@
 
     <!--    Navigation bar-->
     <div class="topnav">
-        <a class="active" href="../index.html">Home</a>
+        <a class="active" href="../index.php">Home</a>
         <div class="dropdown">
             <button class="dropdown">Products
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="../wooden_crafted_toys/product_landing_page.html">Toys</a>
-                <a href="../wooden_decoration_products/product_landing_page.html">Decorations</a>
+                <a href="../wooden_crafted_toys/product_landing_page.php">Toys</a>
+                <a href="../wooden_decoration_products/product_landing_page.php">Decorations</a>
             </div>
         </div>
-        <a href="../content/customer.html">Customer</a>
-        <a href="../content/about.html">About</a>
-        <a href="../content/registration.html">Registration</a>
-        <a href="../content/login.html">Log in</a>
-        <a href="../content/logout.html">Log out</a>
+        <a href="../content/customer.php">Customer</a>
+        <a href="../content/about.php">About</a>
+        <a href="../content/registration.php">Registration</a>
+        <a href="../content/login.php">Log in</a>
+        <a href="../content/logout.php">Log out</a>
     </div>
     <hr>
     <h2>Wooden decorations</h2>

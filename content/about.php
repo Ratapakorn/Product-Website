@@ -24,7 +24,7 @@
         <nav class="horizontal">
             <ul>
                 <!-- yet to add the link conditionally if the user is logged in, it shows his profile and if not it woill take user to its login page  -->
-                <li><a href="customerDetails.html" class="profilePage"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                <li><a href="customerDetails.php" class="profilePage"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
               </ul>
         </nav>
     </header>
@@ -33,19 +33,19 @@
         <nav class="vertnavbar">
             <ul>
                 <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
-                <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../index.php"><i class="fa fa-home"></i>Home</a></li>
                 <div class="dropdownfunctionality">
-                    <li><a class="dropdownbutton" href="../wooden_crafted_toys/product_landing_page.html"><i
+                    <li><a class="dropdownbutton" href="../wooden_crafted_toys/product_landing_page.php"><i
                                 class="fa fa-archive"></i>Products</a></li>
                     <div class="dropdowncontent">
-                        <a href="../wooden_crafted_toys/product_landing_page.html">Toys</a>
-                        <a href="../wooden_crafted_decorations/product_landing_page.html">Decorations</a>
+                        <a href="../wooden_crafted_toys/product_landing_page.php">Toys</a>
+                        <a href="../wooden_crafted_decorations/product_landing_page.php">Decorations</a>
                     </div>
                 </div>
-                <!-- <li><a href="customer.html"><i class="fa fa-user"></i>User Information</a></li> -->
-                <li><a href="about.html"><i class="fa fa-building"></i>About</a></li>
-                <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li> 
-                <li class="loginregis"><a href="login.html">Login / Registration</a></li>
+                <!-- <li><a href="customer.php"><i class="fa fa-user"></i>User Information</a></li> -->
+                <li><a href="about.php"><i class="fa fa-building"></i>About</a></li>
+                <li><a href="contacts.php"><i class="fa fa-phone"></i>Contact</a></li> 
+                <li class="loginregis"><a href="login.php">Login / Registration</a></li>
             </ul>
         </nav>
 
@@ -118,7 +118,7 @@
     <div class="joinTeam">
         <h4>
             Wanna join our dynamic and diverse team?
-           <a href="careerPage.html"> <button class="join"><i class="fa fa-users"></i> careers page  <i class="fa fa-external-link"></i></button></a>
+           <a href="careerPage.php"> <button class="join"><i class="fa fa-users"></i> careers page  <i class="fa fa-external-link"></i></button></a>
         </h4>
     </div>
     <!-- footer icons  -->

@@ -19,26 +19,26 @@
 <hr>
 <!--    Navigation bar-->
     <div class="topnav">
-        <a class="active" href="../index.html">Home</a>
+        <a class="active" href="../index.php">Home</a>
         <div class="dropdown">
             <button class="dropdown">Products
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="../wooden_crafted_toys/product_landing_page.html">Toys</a>
-                <a href="../wooden_decoration_products/product_landing_page.html">Decorations</a>
+                <a href="../wooden_crafted_toys/product_landing_page.php">Toys</a>
+                <a href="../wooden_decoration_products/product_landing_page.php">Decorations</a>
             </div>
         </div>
-        <a href="customer.html">Customer</a>
-        <a href="about.html">About</a>
-        <a href="registration.html">Registration</a>
-        <a href="login.html">Log in</a>
+        <a href="customer.php">Customer</a>
+        <a href="about.php">About</a>
+        <a href="registration.php">Registration</a>
+        <a href="login.php">Log in</a>
     </div>
 
     <h2>
         You're logged out!!
     </h2>
-    <h3>To log in press:<a href="login.html">
+    <h3>To log in press:<a href="login.php">
         <button>Login</button></a>
     </h3>
     <hr>

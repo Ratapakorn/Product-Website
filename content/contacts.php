@@ -23,19 +23,19 @@
         <nav class="vertnavbar">
             <ul>
                 <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH" /></li>
-                <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="../index.php"><i class="fa fa-home"></i>Home</a></li>
                 <div class="dropdownfunctionality">
-                    <li><a class="dropdownbutton" href="../wooden_crafted_toys/product_landing_page.html"><i
+                    <li><a class="dropdownbutton" href="../wooden_crafted_toys/product_landing_page.php"><i
                                 class="fa fa-archive"></i>Products</a></li>
                     <div class="dropdowncontent">
-                        <a href="../wooden_crafted_toys/product_landing_page.html">Toys</a>
-                        <a href="../wooden_crafted_decorations/product_landing_page.html">Decorations</a>
+                        <a href="../wooden_crafted_toys/product_landing_page.php">Toys</a>
+                        <a href="../wooden_crafted_decorations/product_landing_page.php">Decorations</a>
                     </div>
                 </div>
-                <!-- <li><a href="customer.html"><i class="fa fa-user"></i>User Information</a></li> -->
-                <li><a href="about.html"><i class="fa fa-building"></i>About</a></li>
-                <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li>
-                <li class="loginregis"><a href="login.html">Login / Registration</a></li>
+                <!-- <li><a href="customer.php"><i class="fa fa-user"></i>User Information</a></li> -->
+                <li><a href="about.php"><i class="fa fa-building"></i>About</a></li>
+                <li><a href="contacts.php"><i class="fa fa-phone"></i>Contact</a></li>
+                <li class="loginregis"><a href="login.php">Login / Registration</a></li>
             </ul>
         </nav>
 
@@ -70,7 +70,7 @@
         <button class="btn">Send
             <i class="fas fa-paper-plane" style="color: aliceblue; margin-left: 5%;"></i></button>
         <br>
-        <a href="about.html" class="register">Go back / cancel !</a>
+        <a href="about.php" class="register">Go back / cancel !</a>
         <div class="topFooter">
             <div class="footer-item">
                 <i class="fas fa-gauge" style="color: #333;"></i>

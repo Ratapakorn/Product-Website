@@ -22,37 +22,37 @@
 <!-- <hr> -->
 <!--    Navigation bar-->
     <!-- <div class="topnav">
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="index.php">Home</a>
         <div class="dropdown">
             <button class="dropdown">Products
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="wooden_crafted_toys/product_landing_page.html">Toys</a>
-                <a href="wooden_decoration_products/product_landing_page.html">Decorations</a>
+                <a href="wooden_crafted_toys/product_landing_page.php">Toys</a>
+                <a href="wooden_decoration_products/product_landing_page.php">Decorations</a>
             </div>
         </div>
-        <a href="customer.html">Customer</a>
-        <a href="about.html">About</a>
-        <a href="registration.html">Registration</a>
-        <a href="login.html">Log in</a>
+        <a href="customer.php">Customer</a>
+        <a href="about.php">About</a>
+        <a href="registration.php">Registration</a>
+        <a href="login.php">Log in</a>
     </div> -->
     <div class="container">
         <nav class="vertnavbar">
             <ul>
                 <li class="logo"><img src="images/AbhiGmbh_Logo.png" alt="Abhi_GMbH"/></li>
-                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="index.php"><i class="fa fa-home"></i>Home</a></li>
                 <div class="dropdownfunctionality">
-                    <li><a class="dropdownbutton" href="wooden_crafted_toys/product_landing_page.html"><i class="fa fa-archive"></i>Products</a></li>
+                    <li><a class="dropdownbutton" href="wooden_crafted_toys/product_landing_page.php"><i class="fa fa-archive"></i>Products</a></li>
                     <div class="dropdowncontent">
-                        <a href="wooden_crafted_toys/product_landing_page.html">Toys</a>
-                        <a href="wooden_crafted_decorations/product_landing_page.html">Decorations</a>
+                        <a href="wooden_crafted_toys/product_landing_page.php">Toys</a>
+                        <a href="wooden_crafted_decorations/product_landing_page.php">Decorations</a>
                     </div>
                 </div>
-                <li><a href="./content/customerDetails.html"><i class="fa fa-user"></i>User Information</a></li>
-                <li><a href="./content/about.html"><i class="fa fa-building"></i>About</a></li>
-                <li><a href="./content/contacts.html"><i class="fa fa-phone"></i>Contact</a></li> <!-- we don't have a contact page yet -->
-                <li class="loginregis"><a href="./content/login.html">Login / Registration</a></li>
+                <li><a href="./content/customerDetails.php"><i class="fa fa-user"></i>User Information</a></li>
+                <li><a href="./content/about.php"><i class="fa fa-building"></i>About</a></li>
+                <li><a href="./content/contacts.php"><i class="fa fa-phone"></i>Contact</a></li> <!-- we don't have a contact page yet -->
+                <li class="loginregis"><a href="./content/login.php">Login / Registration</a></li>
             </ul>
         </nav>
         
@@ -72,7 +72,7 @@
             experience the charm of hand-made craftsmanship, backed 
             by fast shipping and excellent customer service.
             <h3>Login to explore more!!</h3>
-            <a href="login.html">
+            <a href="login.php">
                 <button>Login</button>
             </a>
         </p>

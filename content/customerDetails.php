@@ -50,8 +50,8 @@
                 <a href="#">My Coupons</a>
                 <a href="#">My Reviews & Ratings</a>
             </div>
-            <a href="about.html" class="leftButtons"><i class="fa fa-power-off"  aria-hidden="true"></i>Home Page</a><br><br>
-            <a href="about.html" class="leftButtons"><i></i>Logout</a>
+            <a href="about.php" class="leftButtons"><i class="fa fa-power-off"  aria-hidden="true"></i>Home Page</a><br><br>
+            <a href="about.php" class="leftButtons"><i></i>Logout</a>
         </div>
 <!-- sample values are being used atm eaiting foir js  -->
         <!-- Right Content Section -->
@@ -85,7 +85,7 @@
 
                 <br>
                 <!-- need to implement this  -->
-                <a href="about.html" class="deleteAc"><i></i>Delete Account</a>
+                <a href="about.php" class="deleteAc"><i></i>Delete Account</a>
             </div>
         </div>
 

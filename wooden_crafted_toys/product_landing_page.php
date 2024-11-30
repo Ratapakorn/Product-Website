@@ -87,29 +87,6 @@
       </div>
   </div>
       </div>
-      <!-- <ul>
-        <li>
-          <h2>Wooden crafted toys</h2>
-          <dl>
-            <img src="../images/product_wt_1.png" alt="img no available">
-            <dt>Product 1: bla-bla</dt>
-            <dd>Price: eur 0</dd>
-            <dd>Description: Best product ever</dd>
-            <dd>Stock: Available</dd><br>
-    
-            <img src="../images/product_wt_2.png" alt="img no available">
-            <dt>Product 2: bla-bla</dt>
-            <dd>Price: eur 0</dd>
-            <dd>Description: Best product ever</dd>
-            <dd>Stock: Available</dd><br>
-          </dl>
-        </li>
-    
-      </ul> -->
-      <!-- <hr>
-      <footer>
-        Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
-    </footer> -->
     <ul id="itemList"></ul>
     <button onclick="getPrice()">Calculate Price</button>
     <div id="price"></div>

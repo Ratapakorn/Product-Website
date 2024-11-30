@@ -12,28 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <script
-        src="./JS_files/navbar.js" defer>
+        src="../JS_files/navbar.js" defer>
     </script>
 </head>
 <body>
     <div class="container">
-        <nav class="vertnavbar">
-            <ul>
-                <li class="logo"><img src="../images/AbhiGmbh_Logo.png" alt="Abhi_GMbH"/></li>
-                <li><a href="../index.php"><i class="fa fa-home"></i>Home</a></li>
-                <div class="dropdownfunctionality">
-                    <li><a class="dropdownbutton" href="product_landing_page.php"><i class="fa fa-archive"></i>Products</a></li>
-                    <div class="dropdowncontent">
-                        <a href="product_landing_page.php">Toys</a>
-                        <a href="product_landing_page.php">Decorations</a>
-                    </div>
-                </div>
-                <li><a href="../content/customer.php"><i class="fa fa-user"></i>User Information</a></li>
-                <li><a href="../content/about.php"><i class="fa fa-building"></i>About</a></li>
-                <li><a href=""><i class="fa fa-phone"></i>Contact</a></li> <!-- we don't have a contact page yet -->
-                <li class="loginregis"><a href="../content/login.php">Login / Registration</a></li>
-            </ul>
-        </nav>
+    <div id="navbar-container"></div>
         <div class="content">
             <p class="breadcrumb">Toys > Product Name</p>
 

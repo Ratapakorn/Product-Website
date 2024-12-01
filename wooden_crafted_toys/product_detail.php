@@ -23,7 +23,7 @@ $price = isset($_GET['price']) ? $_GET['price'] : '0.00';
     <div class="container">
         <div id="navbar-container"></div>
         <div class="content">
-            <p class="breadcrumb">Toys > <?php echo $name; ?></p>
+            <p class="breadcrumb"><a href="product_landing_page.php" style="text-decoration:underline">Toys</a> > <?php echo $name; ?></p>
 
             <div class="product-container">
                 <!-- Left Side: Product Image -->

@@ -37,7 +37,7 @@
     },
     {
     "pid": 5,
-    "name": "Book keeper",
+    "name": "Book stand",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 59.99,
@@ -46,7 +46,7 @@
     },
     {
     "pid": 6,
-    "name": "Book keeper",
+    "name": "Book shelf",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 59.99,
@@ -55,7 +55,7 @@
     },
     {
     "pid": 7,
-    "name": "Book keeper",
+    "name": "Book rack",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 59.99,
@@ -64,7 +64,7 @@
     },
     {
     "pid": 8,
-    "name": "Book keeper",
+    "name": "wooden plant",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 59.99,

@@ -38,19 +38,23 @@ $products = json_decode($jsonData, true);
 
 // Displaying each product's details
 foreach ($products as $product) {
-    echo '
-        <div class="grid-item">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img not available">
-            <p>Decorations</p>
-            <a href="Product' . $product['pid'] . '_page.php"><p class="producttitle">' . $product['name'] . '</p></a>
-            <p class="productprice">' . $product['price'] . '</p>
-            <br>
-            <br>
-            <div class="setCenter">
-                <button class="AddProd" onclick="addItem(\'' . $product['name'] . '\', \'' . $product['price'] . '\', \'desc\')">ADD TO CART</button>
-            </div>
-        </div>';
+  echo '
+      <div class="grid-item">
+          <img class="prodimg" src="../images/product_wt_1.png" alt="img not available">
+          <p>Decorations</p>
+          <!-- Modified anchor tag with query parameters -->
+          <a href="product_detail.php?pid=' . $product['pid'] . '&name=' . urlencode($product['name']) . '&price=' . urlencode($product['price']) . '">
+              <p class="producttitle">' . $product['name'] . '</p>
+          </a>
+          <p class="productprice">' . $product['price'] . '</p>
+          <br>
+          <br>
+          <div class="setCenter">
+              <button class="AddProd" onclick="addItem(\'' . $product['name'] . '\', \'' . $product['price'] . '\', \'desc\')">ADD TO CART</button>
+          </div>
+      </div>';
 }
+
 ?> 
 
   </div>

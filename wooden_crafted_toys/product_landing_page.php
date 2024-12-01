@@ -29,64 +29,30 @@
       <button id="themebutton", onclick="toggleMode()">test</button>
       <h1>Products</h1>
       <div class="grid-container">
+      <?php
+// Reading the JSON file
+$jsonData = file_get_contents("../productData/product.json");
+
+// Decoding JSON data to PHP array
+$products = json_decode($jsonData, true);
+
+// Displaying each product's details
+foreach ($products as $product) {
+    echo '
         <div class="grid-item">
-            <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
+            <img class="prodimg" src="../images/product_wt_1.png" alt="img not available">
             <p>Decorations</p>
-            <a href="Product1_page.php"><p class="producttitle">Product 0</p></a>
-            <p class="productprice">€10.348.692</h3>
+            <a href="Product' . $product['pid'] . '_page.php"><p class="producttitle">' . $product['name'] . '</p></a>
+            <p class="productprice">' . $product['price'] . '</p>
             <br>
             <br>
             <div class="setCenter">
-              <button class="AddProd", onclick="addItem('Product 0', '€10.348.692','desc')">ADD TO CART</button>
+                <button class="AddProd" onclick="addItem(\'' . $product['name'] . '\', \'' . $product['price'] . '\', \'desc\')">ADD TO CART</button>
             </div>
-        </div>
-        <div class="grid-item">
-          <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-          <p>Decorations</p>
-          <a href="Product1_page.php"><p class="producttitle">Product 1</p></a>
-          <p class="productprice">€59.000</h3>
-                      
+        </div>';
+}
+?> 
 
-          <!-- <?php
-// Reading the JSON file
-// $jsonData = file_get_contents("productsData/product.json");
- 
-// Decoding JSON data to PHP array
-// $products = json_decode($jsonData, true);
- 
-// Displaying each user's details
-// foreach ($products as $product) {
-//     echo "Name: " . $product['name'] . "<br>";
-//     echo "Price: " . $product['price'] . "<br><br>";
-// }
-?> -->
-          <br>
-          <br>
-          <div class="setCenter">
-            <button class="AddProd", onclick="addItem('Product 1', '€59.000','desc')">ADD TO CART</button>
-          </div>
-      </div>
-      <div class="grid-item">
-        <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-        <p>Decorations</p>
-        <a href="Product1_page.php"><p class="producttitle">Product 2</p></a>
-        <p class="productprice">€10.348.692</h3>
-        <br>
-        <br>
-        <div class="setCenter">
-          <button class="AddProd", onclick="addItem('Product 2', '€10.348.692','desc')">ADD TO CART</button>
-        </div>
-    </div>
-    <div class="grid-item">
-      <img class="prodimg" src="../images/product_wt_1.png" alt="img no available">
-      <p>Decorations</p>
-      <a href="Product1_page.php"><p class="producttitle">Product 3</p></a>
-      <p class="productprice">€10.348.692</h3>
-      <br>
-      <br>
-      <div class="setCenter">
-        <button class="AddProd", onclick="addItem('Product 3', '€10.348.692','desc')">ADD TO CART</button>
-      </div>
   </div>
       </div>
     <ul id="itemList"></ul>

@@ -1,7 +1,7 @@
 [
     {
     "pid": 1,
-    "name": "Frustum",
+    "name": "Plane",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 79.99,
@@ -10,7 +10,7 @@
     },
     {
     "pid": 2,
-    "name": "Frustum",
+    "name": "Clock",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 93.99,
@@ -19,7 +19,52 @@
     },
     {
     "pid": 3,
-    "name": "Frustum",
+    "name": "Book keeper",
+    "description": "Good quality!",
+    "imagepath": "images/product_wd_1.png",
+    "price": 59.99,
+    "category": "Decorations",
+    "subcategory": "Wooden"
+    },
+    {
+    "pid": 4,
+    "name": "Book keeper",
+    "description": "Good quality!",
+    "imagepath": "images/product_wd_1.png",
+    "price": 59.99,
+    "category": "Decorations",
+    "subcategory": "Wooden"
+    },
+    {
+    "pid": 5,
+    "name": "Book keeper",
+    "description": "Good quality!",
+    "imagepath": "images/product_wd_1.png",
+    "price": 59.99,
+    "category": "Decorations",
+    "subcategory": "Wooden"
+    },
+    {
+    "pid": 6,
+    "name": "Book keeper",
+    "description": "Good quality!",
+    "imagepath": "images/product_wd_1.png",
+    "price": 59.99,
+    "category": "Decorations",
+    "subcategory": "Wooden"
+    },
+    {
+    "pid": 7,
+    "name": "Book keeper",
+    "description": "Good quality!",
+    "imagepath": "images/product_wd_1.png",
+    "price": 59.99,
+    "category": "Decorations",
+    "subcategory": "Wooden"
+    },
+    {
+    "pid": 8,
+    "name": "Book keeper",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 59.99,

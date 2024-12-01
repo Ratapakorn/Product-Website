@@ -80,12 +80,5 @@
             <h4>Stock: Available</h4><br> -->
         </div>
     </div>
-
-    
-
-    <!-- <hr> deal later
-    <footer>
-      Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
-  </footer> -->
 </body>
 </html>

@@ -50,7 +50,7 @@
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 59.99,
-    "category": "Decorations",
+    "category": "Toys",
     "subcategory": "Wooden"
     },
     {
@@ -58,8 +58,8 @@
     "name": "Book rack",
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
-    "price": 59.99,
-    "category": "Decorations",
+    "price": 597.99,
+    "category": "Toys",
     "subcategory": "Wooden"
     },
     {
@@ -68,7 +68,7 @@
     "description": "Good quality!",
     "imagepath": "images/product_wd_1.png",
     "price": 59.99,
-    "category": "Decorations",
+    "category": "Toys",
     "subcategory": "Wooden"
     }
     ]

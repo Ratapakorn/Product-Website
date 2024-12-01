@@ -1,3 +1,22 @@
+<?php
+session_start(); // Start the session to track cart items
+
+// Check if 'Add to Cart' button was clicked and process the product
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_to_cart'])) {
+    $productId = $_POST['product_id'];
+    $productName = $_POST['product_name'];
+    $productPrice = $_POST['product_price'];
+    
+    // Add the product to the session cart
+    $_SESSION['cart'][] = [
+        'id' => $productId,
+        'name' => $productName,
+        'price' => $productPrice
+    ];
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +46,7 @@
   <div id="navbar-container"></div>
     <div class="content">
       <button id="themebutton", onclick="toggleMode()">test</button>
+      <a href="shoppingList.php"><button>sc</button></a>
       <h1>Products</h1>
       <div class="grid-container">
       <?php
@@ -37,6 +57,7 @@ $jsonData = file_get_contents("../productData/product.json");
 $products = json_decode($jsonData, true);
 
 // Displaying each product's details
+// <button class="AddProd" onclick="addItem(\'' . $product['name'] . '\', \'' . $product['price'] . '\', \'desc\')">ADD TO CART</button>
 foreach ($products as $product) {
   echo '
       <div class="grid-item">
@@ -50,7 +71,13 @@ foreach ($products as $product) {
           <br>
           <br>
           <div class="setCenter">
-              <button class="AddProd" onclick="addItem(\'' . $product['name'] . '\', \'' . $product['price'] . '\', \'desc\')">ADD TO CART</button>
+              <form method="POST" action="">
+                  <input type="hidden" name="product_id" value="' . $product['pid'] . '">
+                  <input type="hidden" name="product_name" value="' . htmlspecialchars($product['name']) . '">
+                  <input type="hidden" name="product_price" value="' . $product['price'] . '">
+                  <button class="AddProd" name="add_to_cart">ADD TO CART</button>
+              </form>
+              
           </div>
       </div>';
 }

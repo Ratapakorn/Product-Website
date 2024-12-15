@@ -1,5 +1,6 @@
 <?php
 // Retrieve the data passed via the URL
+// we are fetching the product id, name and the price
 $pid = isset($_GET['pid']) ? $_GET['pid'] : '';
 $name = isset($_GET['name']) ? $_GET['name'] : 'Product Name';
 $price = isset($_GET['price']) ? $_GET['price'] : '0.00';

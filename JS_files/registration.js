@@ -144,7 +144,6 @@ document.addEventListener("DOMContentLoaded", () =>{
             localStorage.setItem("email2", email2.value)
             localStorage.setItem("birth_date", birth_date.value)
 
-            alert("Thank you for registration!")
         }
     });
 });

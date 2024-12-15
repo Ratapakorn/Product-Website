@@ -40,7 +40,7 @@
 
         <div class="input-container">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" class="input-field" id="username"/>
+            <input type="text" placeholder="Username" name="username" class="input-field" id="username"/>
         </div>
         <p id="userNameLenError" class="error-message" style="font-size: x-small;margin-top: -2%; text-align: left; margin-left: 5%; margin-bottom: 4%;"></p>
         <p id="userNameCharError" class="error-message"style="font-size: x-small;margin-top: -2%; text-align: left; margin-left: 5%;"></p>
@@ -49,13 +49,13 @@
 
         <div class="input-container">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" class="input-field" id="password1"/>
+            <input type="password" placeholder="Password" name="password" class="input-field" id="password1"/>
         </div>
         <p id="passwordLenError" class="error-message" style="font-size: x-small;margin-top: -2%; text-align: left; margin-left: 5%;"></p>
 
         <div class="input-container">
             <i class="fas fa-regular fa-eye"></i>
-            <input type="password" placeholder="Repeat Password" class="input-field" id="password2" />
+            <input type="password" placeholder="Repeat Password" name="password2" name="email" class="input-field" id="password2" />
         </div>
         <p id="passwordMatchError" class="error-message" style="font-size: x-small;margin-top: -2%; text-align: left; margin-left: 5%;"></p>
 
@@ -120,6 +120,27 @@
         Abhi GMbH &#8226 Esplanade 10, Ingolstadt &nbsp;85049 &#8226 704-555-1151
     </footer>
 </div>
+<script>
+document.getElementById('registrationForm').addEventListener('submit', async (e) => {
+    e.preventDefault(); // Prevent the default form submission
 
+    // Collect the form data
+    const formData = new FormData(e.target);
+
+    try {
+        const response = await fetch('register.php', {
+            method: 'POST',
+            body: formData,
+        });
+
+        const result = await response.json(); // Parse the JSON response
+        alert(result.message); // Display the server message
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+    }
+});
+
+    </script>
 </body>
 </html>

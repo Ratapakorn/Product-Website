@@ -46,6 +46,7 @@ if (empty($_SESSION['cart'])) {
         <ul>
           <?php
           $totalPrice = 0;
+          $count = 0;
           foreach ($_SESSION['cart'] as $item) {
               echo '
               <li>
@@ -56,10 +57,22 @@ if (empty($_SESSION['cart'])) {
                   </form>
               </li>';
               $totalPrice += $item['price'];
+              $count=$count+1;
           }
           ?>
         </ul>
-        <p><strong>Total Price: $<?php echo number_format($totalPrice, 2); ?></strong></p>
+        <p><strong>Price: $<?php echo number_format($totalPrice, 2); ?></strong></p>
+        <p><strong>Discount Price: $<?php 
+        $d=0;
+        if($count>=10 & $count<20){
+          $d=$totalPrice*0.1;
+        }
+        if($count>=20){
+          $d=$totalPrice*0.2;
+        }
+        $totalPrice=$totalPrice-$d;
+        echo number_format($d, 2);?></strong></p>
+         <p><strong>Total Price: $<?php   echo number_format($totalPrice, 2); ?></strong></p>
         <!-- <button onclick="window.location.href='checkout.php'">Proceed to Checkout</button> -->
         
       <?php endif; ?>
